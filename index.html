@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sain eSports</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto:700,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css"></head>
+<!-- jquery -->
+<script src="jquery-1.11.3.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="jquery.bxslider.js"></script>
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
+<!-- Icon on tab -->
+<link rel="icon" href="favicon.ico" />
+<!-- Homepage script -->
+<script src="homepage.js"></script>
+<!-- Included this here instead of in homepage.js since it glitches if I put this initialization code there. -->
+<script>
+$(document).ready(function(){
+	//Load slider functionality
+  $('.bxslider').bxSlider();
+	//Check resolution for mobile/tablet support on navigation bar
+	if($(window).width() < 740){
+		mobileMenu('w');
+	}
+	//Detect mobile browser & switch to mobile nav bar if true.
+	if(mobileCheck() === true){
+		mobileMenu('m');
+	}
+	else{
+		console.log("false");
+	}
+});
+</script>
+
+<body>
+<!-- Website made by Christopher "MoreSarcasm" Vickery -->
+<!-- Last updated: 12/4/15 -->
+
+<!-- This div only appears when the mobile menu icon is pressed, and normally remains hidden. When visible, it covers the entire screen which is why I placed to before all of the other divs. -->
+<div class="mobilemenu">
+	<img src="images/exit.png" class="exiticon" onclick="removePopupMenu()">
+	<ul>
+      <li><a href="#about" onclick="removePopupMenu()">ABOUT</a></li>
+      <li><a href="#news" onclick="removePopupMenu()">NEWS</a></li>
+      <li><a href="#teams" onclick="removePopupMenu()">TEAMS/PLAYERS</a></li>
+      <li><a href="#media" onclick="removePopupMenu()">MEDIA</a></li>
+      <li><a href="#sponsors" onclick="removePopupMenu()">SPONSORS/AFFILIATES</a></li>
+      <li><a href="#contact" onclick="removePopupMenu()">CONTACT</a></li>
+    </ul>
+<!-- end .mobilemenu --></div>
+<div class="truemobilemenu">
+	<img src="images/exit.png" class="trueexiticon" onclick="removePopupMenu()">
+	<ul>
+      <li><a href="#about" onclick="removePopupMenu()">ABOUT</a></li>
+      <li><a href="#news" onclick="removePopupMenu()">NEWS</a></li>
+      <li><a href="#teams" onclick="removePopupMenu()">TEAMS/PLAYERS</a></li>
+      <li><a href="#media" onclick="removePopupMenu()">MEDIA</a></li>
+      <li><a href="#sponsors" onclick="removePopupMenu()">SPONSORS/AFFILIATES</a></li>
+      <li><a href="#contact" onclick="removePopupMenu()">CONTACT</a></li>
+    </ul>
+<!-- end .truemobilemenu --></div>
+<div class="header">
+<a href="http://sain.gg/"><img src="images/logo_large_white_purple_wtext_trimmed.png" class="logo"></a>
+  <div class="nav desktop">
+    <ul>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#news">NEWS</a></li>
+      <li><a href="#teams">TEAMS/PLAYERS</a></li>
+      <li><a href="#media">MEDIA</a></li>
+      <li><a href="#sponsors">SPONSORS/AFFILIATES</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  <!-- end .nav --></div>
+<!-- end .header --></div>
+<div class="container">
+  <!-- SLIDESHOW -->
+	<ul class="bxslider">
+  	<li><a href="#teams"><img src="images/Slider Headings/slidertest.jpg" /></a></li>
+		<li><a href="#news"><img src="images/Slider Headings/csgoslider.jpg" /></a></li>
+  </ul>
+  <!--end of slideshow-->
+  <div class="content">
+    <span id="about">
+      <h1>Sain eSports</h1>
+      <p>Founded in 2015, Sain eSports is a professional gaming organization that strives not only to perform at the highest level, but also to sponsor players that truly deserve recognition. With a <i>League of Legends</i> team aiming to qualify in the upcoming North American Challenger Series, the organization is actively seeking passionate gamers who wish to bring their level of play to a professional level. With a competitive CS:GO team on the way, expect to see more of Sain eSports on all fronts of the eSports scene!</p>
+    </span>
+    <span id="news">
+      <h2>News</h2>
+      <p>Sain eSports is happy to announce our new League of Legends Challenger Team! Check out the individual player profiles and bios under the "Teams/Players" tab.</p>
+	  <br>
+	  <p>---</p>
+	  <br>
+			<p>The Sain eSports CS:GO General Manager, Cortez, is actively looking for players for our competitive CS:GO team. Please email him at <a href="mailto:csgo@sain.gg">csgo@sain.gg</a> to apply. Please include your rank, username, CEVO profile link and efficacy (if applicable), ESEA profile link and RWS (if applicable), Skype username, and any other notable information.</p>
+    </span>
+    <span id="teams">
+      <h2>Teams</h2>
+	  <center>
+		<img src="images/divider_league.jpg" class="divider"><br>
+    <table>
+			<!-- TOP LANE -->
+			<tr>
+				<td>
+					<img src="images/sion.jpg">
+				</td>
+				<td>
+					<b>CcWiN</b><br>
+					<i>Top Lane</i><br>
+					<p>Known for both his tanks and carries, CcWiN can adapt to Meta shifts requiring him to play teamfighters, splitpushers, or even supportive toplaners. Internally referenced as the “King of Solo-kills” there is rarely a game where he hasn’t snowballed off of his opponent.</p>
+				</td>
+			</tr>
+			<!-- JUNGLE -->
+			<tr>
+				<td>
+					<img src="images/nunu.jpg">
+				</td>
+				<td>
+					<b>MaGeRdAnGeR</b><br>
+					<i>Jungle</i><br>
+					<p>Potentially the most consistent player on the roster, MaGeR has proven himself to be a high-caliber jungler with a diverse champion pool. Although he is exceptionally proficient at tanky, peeling junglers, he isn’t afraid to play whatever is required to win. Even if it’s Nidalee.</p>
+				</td>
+			</tr>
+			<!-- MID LANE -->
+			<tr>
+				<td>
+					<img src="images/yasuo.jpg">
+				</td>
+				<td>
+					<b>Sazuya</b><br>
+					<i>Mid Lane</i><br>
+					<p>One of the Top 20 Diana players in the world, and a terrifying Challenger Yasuo carry, Sazuya brings a unique aggression and champion pool to the midlane that both compliments his teammates’ play styles and forces opponents to stay alert.</p>
+				</td>
+			</tr>
+			<!-- ADC -->
+			<tr>
+				<td>
+					<img src="images/vayne.jpg">
+				</td>
+				<td>
+					<b>Prototype</b><br>
+					<i>AD Carry</i><br>
+					<p>Previously the AD-Carry for the NACS team Final Five, Prototype brings both talent and experience to the Sain eSports League of Legends roster. Prototype is known for his choice to bring exhaust on AD-Carries, as well as being one of the top Vayne players in North America.</p>
+				</td>
+			</tr>
+			<!-- SUPPORT -->
+			<tr>
+				<td>
+					<img src="images/janna.jpg">
+				</td>
+				<td>
+					<b>Whyin</b><br>
+					<i>Support</i><br>
+					<p>Althought being the youngest player on the roster, Whyin has shown that he is not only proficient in his role, but also has a cool head, maintaining composure within the team and keeping them on track.</p>
+				</td>
+			</tr>
+	  </table><br>
+		Substitutes: <b>Kinoscorpia</b> and <b>Flamboozle</b>.<br><br>
+		<u>Support Staff:</u>
+			<p>
+			Cory "eSports Manager" Solowsky: General Manager<br>
+			Amol "Indian" Bhatia: Head Coach<br>
+			<!--Tim "Timkiro" Cho: Analyst; currently working with Cloud 9.<br>-->
+			Ian Preschel: Player/Sports Psychologist<br>
+			</p>
+		</center>
+    </span>
+    <span id="media">
+      <h2>Media</h2>
+      <p>
+      <a href="https://twitter.com/sainesports"><img src="images/socialmedia/twitter.png" class="mediaicon"></a>
+      <a href="https://www.reddit.com/r/Sain/"><img src="images/socialmedia/reddit.png" class="mediaicon"></a>
+      <a href="http://www.twitch.tv/SainEsports"><img src="images/socialmedia/twitch.png" class="mediaicon" /></a>
+      </p>
+    </span>
+	<span id="sponsors">
+		<h2>Sponsors / Affiliates</h2>
+		<p>
+			<a href="https://vulcun.com/a/SainEsports"><img src="images/sponsors/vulcun.jpg" alt="Vulcun" class="sponsoricon" style="background-color:#a41f22;"></a>
+			<a href="http://send.onenetworkdirect.net/z/555266/CD226541/"><img src="images/sponsors/razer.gif" alt="RazerStore" border="0" class="sponsoricon"></a>
+			<a href="http://www.kinguin.net/category/21962/fallout-4-steam-cd-key?r=2266&bannerid=14" target="_blank">
+    <img src="images/sponsors/kinguin.jpg" alt="Fallout 4" title="Kinguin - Fallout 4" class="sponsoricon" style="background-color:white;"/>
+			</a>
+		</p>
+	</span>
+    <span id="contact">
+    <h2>Contact</h2>
+      <p>
+      Robert "Sain" Murray, Owner and CEO: <a href="mailto:admin@sain.gg">admin@sain.gg</a><br>
+      Christopher "MoreSarcasm" Vickery, Tech Lead: <a href="mailto:tech@sain.gg">tech@sain.gg</a><br>
+      Cory "eSports Manager" Solowsky, League of Legends Manager: <a href="mailto:league@sain.gg">league@sain.gg</a><br>
+			Ryan "Cortez" Fino, CS:GO Manager: <a href="mailto:csgo@sain.gg">csgo@sain.gg</a><br>
+      </p>
+    </span>
+    </ul>
+  <!-- end .content --></div>
+<!-- end .container --></div>
+<div class="footer">
+	<br>
+  <p>Copyright &copy; 2015 Sain eSports LLC. All rights reserved.</p>
+<!-- end .footer --></div>
+</body>
+</html>
